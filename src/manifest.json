@@ -1,0 +1,8 @@
+"browser_action": {
+"default_title": "Pinboard Pin",
+"default_icon": {
+"32": "/img/pinboard_idle_32.png",
+"64": "/img/pinboard_idle_64.png",
+},
+"default_popup": "/index.html"
+}

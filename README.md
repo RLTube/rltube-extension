@@ -1,7 +1,26 @@
 # RltubeFrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
+## Install type definitions for Web Extension
 
+
+```sh
+# yarn version
+yarn add web-ext-types --dev
+
+# npm version
+npm install --save-dev web-ext-types
+```
+
+#### configuration in tsconfig.json (already done) 
+
+```js
+{
+  "compilerOptions": {
+    // You have to explicitly set @types to get DefinitelyTyped type definitions
+    "typeRoots": ["node_modules/@types", "node_modules/web-ext-types"],
+  }
+}
+```
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -32,4 +51,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - set the 1st video of youtube on the 
 - set the video list begining by the 2nd video of youtube list
 - secure the site with Web Tokens
-- secure the backend
+- secure the back
